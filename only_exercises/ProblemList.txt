@@ -1,0 +1,624 @@
+"""           
+Tebrikler! Bölümü başarıyla bitirdiniz. Şimdi, öğrendiklerinizin akılda kalması için ödevinizi yapma zamanı!
+
+Not: Buradaki tüm problemler sizin algoritma yeteneğinizi oldukça geliştirecektir. O yüzden zorlandığınız noktalarda pes etmeyin. Üzerine kafa yormaya ve sürekli denemeye çalışın.
+
+; Problem 1
+; Kullanıcıdan aldığınız bir sayının mükemmel olup olmadığını bulmaya çalışın.
+
+; Bir sayının kendi hariç bölenlerinin toplamı kendine eşitse bu sayıya "mükemmel sayı" denir. Örnek olarak, 6 mükemmel bir sayıdır. (1 + 2 + 3 = 6)
+
+Problem 2
+Kullanıcıdan aldığınız bir sayının "Armstrong" sayısı olup olmadığını bulmaya çalışın.
+
+Örnek olarak, Bir sayı eğer 4 basamaklı ise ve oluşturan rakamlardan herbirinin 4. kuvvetinin toplamı( 3 basamaklı sayılar için 3.kuvveti ) o sayıya eşitse bu sayıya "Armstrong" sayısı denir.
+
+Örnek olarak : 1634 = 1^4 + 6^4 + 3^4 + 4^4
+
+Problem 3
+1'den 10'kadar olan sayılarla ekrana çarpım tablosu bastırmaya çalışın.
+
+İpucu: İç içe 2 tane for döngüsü kullanın. Aynı zamanda sayıları range() fonksiyonunu kullanarak elde edin.
+
+Problem 4
+Her bir while döngüsünde kullanıcıdan bir sayı alın ve kullanıcının girdiği sayıları "toplam" isimli bir değişkene ekleyin. Kullanıcı "q" tuşuna bastığı zaman döngüyü sonlandırın ve ekrana "toplam değişkenini" bastırın.
+
+İpucu : while döngüsünü sonsuz koşulla başlatın ve kullanıcı q'ya basarsa döngüyü break ile sonlandırın.
+
+Problem 5
+1'den 100'e kadar olan sayılardan sadece 3'e bölünen sayıları ekrana bastırın. Bu işlemi continue ile yapmaya çalışın.
+
+Problem 6
+Buradaki problemin çözümünü derslerimizde özellikle öğrenmedik. Burada mantık yürüterek ve list comprehension kullanarak 1'den 100'e kadar olan sayılardan sadece çift sayıları bir listeye atmayı yapmayı çalışın.
+
+Not: Programlamada her detayı öğrenemeyiz. Bunun için bazı yerlerde deneme yanılma yoluyla da öğrendiğimiz şeyler olur. Bu problemde deneme yanılma yoluyla list comprehension'ın koşullu durumlarla kullanımını öğreneceksiniz.
+
+İpucu: Basit düşünmeye çalışın.
+Problem 7
+listedeki tekleri ve ciftleri ayri ayri bastir ve toplamlarini ayri ayri goster ve kucukten buyuge sirala
+list = [1,3,4,5,6,7,8,12,54,23,11,75,22,9]
+
+Problem 8
+PRIME NUMBERS from 1 to 100
+
+Problem 9
+FACTORIALS from 1 to 100
+
+Problem 10
+FIBONACCI NUMBERS from 1 to 100
+
+Problem 11
+ATM WITH LOOPS 
+
+Problem 12
+LOGIN PANEL WITH LOOPS
+
+Problem 13
+PALINDROME CHECK INPUT
+s = "A man , a plan , a canal: Panama"
+explanation: "amanaplanacanalpanama"
+output: True
+
+Problem 14
+list = [1,3,4,5,6,7,8,12,54,23,11,75,22,9]
+listede varmi in list fonksiyonu while true ile loopda hangi index te
+
+Problem 15
+Digit mountain in range(1,10)
+
+Problem 16
+ONGUN mountain
+
+Problem 17
+Kullanıcıdan alınan boy ve kilo değerlerine göre beden kitle indeksini hesaplayın ve şu kurallara göre ekrana şu yazıları yazdırın.
+
+ Beden Kitle İndeksi: Kilo / Boy(m) *  Boy(m)
+
+ BKİ 18.5'un altındaysa -------> Zayıf
+
+ BKİ 18.5 ile 25 arasındaysa ------> Normal
+
+ BKİ 25 ile 30 arasındaysa --------> Fazla Kilolu
+
+ BKİ 30'un üstündeyse -------------> Obez
+ 
+Problem 18
+Kullanıcıdan 3 tane sayı alın ve en büyük sayıyı ekrana yazdırın.
+
+Problem 19
+Kullanıcının girdiği vize1,vize2,final notlarına notlarına göre harf notunu hesaplayın.
+
+    Vize1 toplam notun %30'una etki edecek.
+
+    Vize2 toplam notun %30'una etki edecek.
+
+    Final toplam notun %40'ına etki edecek.
+
+
+    Toplam Not >=  90 -----> AA
+
+    Toplam Not >=  85 -----> BA
+
+    Toplam Not >=  80 -----> BB
+
+    Toplam Not >=  75 -----> CB
+
+    Toplam Not >=  70 -----> CC
+
+    Toplam Not >=  65 -----> DC
+
+    Toplam Not >=  60 -----> DD
+
+    Toplam Not >=  55 -----> FD
+
+    Toplam Not <  55 -----> FF
+    
+Problem 20
+Şimdi de geometrik şekil hesaplama işlemi yapalım. İlk olarak kullanıcıdan üçgenin mi dörtgenin mi tipini bulmak istediğini sorun.
+
+Eğer kullanıcı "Dörtgen" cevabını verirse , 4 tane kenar isteyip bu dörtgenin kare mi , dikdörtgen mi yoksa sıradan bir dörtgen mi olduğunu bulmaya çalışın.
+
+Eğer kullanıcı "Üçgen" cevabını verirse , 3 tane kenar isteyip bu üçgenin ikizkenar mı , eşkenar mı yoksa sıradan bir üçgen mi olduğunu bulmaya çalışın. Eğer verilen kenarlar bir üçgen belirtmiyorsa, ekrana "Üçgen belirtmiyor" şeklinde bir yazı yazın.o
+
+Üçgen belirtme şartını bilmiyorsunuz internetten bakabilirsiniz.
+
+Ayrıca , bu problemde mutlak değer bulmaya ihtiyacınız olacak. Bunun için, Pythonda hazır bir fonksiyon olan abs() fonksiyonunu kullanabilirsiniz. Kullanımı şu şekildedir ;
+
+abs(-4)
+4
+abs(5)
+5
+Not: Bu problem sizin algoritma kurma becerinizi bir hayli geliştirecektir.
+
+Problem 21
+Kullanıcıdan aldığınız 3 tane sayıyı çarparak ekrana yazdırın. Ekrana yazdırma işlemini format metoduyla yapmaya çalışın.
+
+Problem 22
+Kullanıcıdan aldığınız boy ve kilo değerlerine göre kullanıcının beden kitle indeksini bulun.
+
+Beden Kitle İndeksi : Kilo / Boy(m) Boy(m)
+
+Problem 23
+Bir aracın kilometrede ne kadar yaktığı ve kaç kilometre yol yaptığı bilgilerini alın ve sürücünü toplam ne kadar ödemesini gerektiğini hesaplayın.
+
+Problem 24
+Kullanıcıdan ad,soyad ve numara bilgisini alarak bunları alt alta ekrana yazdırın.
+
+Problem 25
+Kullanıcıdan iki tane sayı isteyin ve bu sayıların değerlerini birbirleriyle değiştirin.
+
+Problem 26
+Kullanıcıdan bir dik üçgenin dik olan iki kenarını(a,b) alın ve hipotenüs uzunluğunu bulmaya çalışın.
+
+Hipotenüs Formülü: a^2 + b^2 = c^2
+
+Problem 27
+we have dataScientist list. First reverse it then count all character lenght
+assume that we have char limit 100 so how many empty limits we have remainindataScientist = ['Python', 'R', 'SQL', 'Git', 'Tableau', 'SAS']
+"""
+
+# Problem 28
+# 1'den 1000'e kadar olan sayılardan mükemmel sayı olanları ekrana yazdırın. Bunun için bir sayının mükemmel olup olmadığını dönen bir tane fonksiyon yazın.
+
+# Bir sayının bölenlerinin toplamı kendine eşitse bu sayı mükemmel bir sayıdır. Örnek olarak 6 mükemmel bir sayıdır (1 + 2 + 3 = 6).
+
+# Problem 29
+# Kullanıcıdan 2 tane sayı alarak bu sayıların en büyük ortak bölenini (EBOB) dönen bir tane fonksiyon yazın.
+
+# Problem için şu siteye bakabilirsiniz;
+
+# http://www.matematikciler.com/6-sinif/matematik-konu-anlatimlari/1020-en-kucuk-ortak-kat-ve-en-buyuk-ortak-bolen-ebob-ekok
+
+# Problem 30
+# Kullanıcıdan 2 tane sayı alarak bu sayıların en küçük ortak katlarını (EKOK) dönen bir tane fonksiyon yazın.
+
+# Problem için şu siteye bakabilirsiniz;
+
+# http://www.matematikciler.com/6-sinif/matematik-konu-anlatimlari/1020-en-kucuk-ortak-kat-ve-en-buyuk-ortak-bolen-ebob-ekok
+
+# Problem 31
+# Kullanıcıdan 2 basamaklı bir sayı alın ve bu sayının okunuşunu bulan bir fonksiyon yazın.
+
+# Örnek: 97 ---------> Doksan Yedi
+
+# Problem 32
+# 1'den 100'e kadar olan sayılardan pisagor üçgeni oluşturanları ekrana yazdıran bir fonksiyon yazın.(a <= 100,b <= 100)
+
+# Problem 33 
+# Random bir sayi uret 1 ile 1000 arasinda olsun. 10 tane tahmin hakki tanimlansin ve her yapilan secim arasi bekleme suresi 3 saniye olsun.
+# Her secimden sonra kalan hak ekrana bastirilsin. Secimler sayi buyuk yada kucuk diye yonlendirilsin ve dogru secim yapildiginda ise kacinci tahminde sayinin bulundugu ekrana yazilsin.
+
+
+# Problem 34
+# Bu projede ise 4 tane sınıfı oluşturun.
+
+; Hayvan Sınıfı ------> Bütün hayvanların ortak özelliklerinin toplandığı sınıf olacak.
+
+; Köpek Sınıfı ------> Bu sınıf, hayvan sınıfından miras alan bir sınıf olacak. Ayrıca bu sınıfa köpeklere ait ek özellikler ve metodlar ekleyin.
+
+; Kuş Sınıfı ------> Bu sınıf, hayvan sınıfından miras alan bir sınıf olacak. Ayrıca bu sınıfa kuşlara ait ek özellikler ve metodlar ekleyin.
+
+; At Sınıfı ------> Bu sınıf, hayvan sınıfından miras alan bir sınıf olacak. Ayrıca bu sınıfa atlara ait ek özellikler ve metodlar ekleyin.
+
+; Problem 35
+; Elinizde stringlerin bulunduğu bir liste bulunduğunu düşünün.
+; liste = ["345","sadas","324a","14","kemal"]
+; Bu listenin içindeki stringlerden içinde sadece rakam bulunanları ekrana yazdırın. Bunu yaparken try,except bloklarını kullanmayı unutmayın.
+
+
+; Problem 36
+; Bir sayının çift olup olmadığını sorgulayan bir fonksiyon yazın. Bu fonksiyon, eğer sayı çift ise return ile bu değeri dönsün. Ancak sayı tek sayı ise fonksiyon raise ile ValueError hatası fırlatsın. 
+; Daha sonra, içinde çift ve tek sayılar bulunduran bir liste tanımlayın ve liste üzerinde gezinerek ekrana sadece çift sayıları bastırın.
+
+
+#Problem 37
+#1 ile 1000 arasindaki composite sayilari yazdirin mumkunse fonksiyon
+
+#Problem 38
+# Uncle's Problem
+# 100 kisilik bir halka ve ortasindan ilk olarak 1 numarayi itip 1 atla ve sonrakini it halka bitene kadar devam et son kalan kisi numarasi
+#Bu sefer 2 numarayi cikart halkada bir kisi kalana kadar devam et kalan kisinin numarasini print et
+
+# Problem 39 
+#Luhn's Algorithm. CC validator and generator. Check the algorithm and create multiple valid card numbers.Check them online if it is true or false.
+
+#Problem 40
+# Tc kimlik no generator and validator
+
+#Problem 41
+#https://www.youtube.com/watch?v=9-vOd0UzHKY&list=PLQVvvaa0QuDeAams7fkdcwOGBpGdHpXln&index=5
+#Tic Tac Toe game
+
+#Problem 42
+#Sum every digit in this list
+# list = [1,2,6,12,234,"123","12344","osman","helloworld123",(123,3333,11123)]
+
+
+#Problem 43 (2D array)
+#lst = [[1,2,3],[4,5],[6]]
+#Output should be [1,2,3,4,5,6]
+
+
+#Problem 44
+# Remove the duplicates and print as list
+# lst = [1,1,2,3,3,3,4,5,5]
+
+
+#Problem 45
+# srt = "111101000101010101110001010000"
+# How many zeros in srt ?
+
+#Problem 46
+# dosya.txt de ogrenci isimleri ve aldiklari 3 adet not var.
+# 1 ve 2 not yuzde 30 etkilerken 3 not yuzde 40 etkiliyor
+# Soru 1 ----------> alinan notlari isim --> not olarak gosterecek sekilde txt dosyasi olusturun
+# Soru 2 ----------> Gecenlerin ve Kalanlarin listesini ayri ayri yapiniz.
+
+
+#Problem 47
+#futbolcular.txt de karma futbolcu isimleri ve takimmlari var 
+#tum futbolculari kendi takimlarina gore listeye ayirip bu listeyi herbir takim icin ayri ayri txt yapin
+
+
+#Problem 48
+#Elinizde bir dikdörtgenin kenarlarını ifade eden sayı çiftlerinin bulunduğu bir liste olsun.
+#
+#         [(3,4),(10,3),(5,6),(1,9)]
+#
+#Şimdi kenar uzunluklarına göre dikdörtgenin alanını hesaplayan bir fonksiyon yazın ve bu listenin her bir elemanına bu fonksiyonu uygulayarak ekrana şöyle bir liste yazdırın.
+#
+#         [12, 30, 30, 9]
+#
+#Not : map() fonksiyonunu kullanmaya çalışın.
+
+
+
+#Problem 49
+#Elinizden her bir elemanı 3'lü bir demet olan bir liste olsun.
+#
+#     [(3,4,5),(6,8,10),(3,10,7)]
+#
+#Şimdi kenar uzunluklarına göre bu kenarların bir üçgen olup olmadığını dönen bir fonksiyon yazın ve sadece üçgen belirten kenarları bulunduran listeyi ekrana yazdırın.
+#
+#     [(3, 4, 5), (6, 8, 10)]
+#
+#Not: filter() fonksiyonunu kullanmaya çalışın.
+
+
+
+#Problem 50
+#Elinizde şöyle bir liste bulunsun.
+#
+#    [1,2,3,4,5,6,7,8,9,10]
+#
+#Bu listenin içindeki çift sayıların toplamını ekrana yazdıran bir fonksiyon yazın.
+#
+#Not: İlk önce filter() fonksiyonu ile çift sayıları ayıklayın. Daha sonra reduce() fonksiyonunu kullanın.
+
+
+
+#Problem 51
+#Elinizde isimlerin ve soyisimlerin bulunduğu iki tane liste olsun.
+#
+#        isimler -----> ["Kerim","Tarık","Ezgi","Kemal","İlkay","Şükran","Merve"]
+#
+#        soyisimler -----> ["Yılmaz","Öztürk","Dağdeviren","Atatürk","Dikmen","Kaya","Polat"]
+#
+#Bu isimleri ve soyisimleri sırasıyla eşleştirin ve ekrana alt alta isimleri ve soyisimleri yazdırın.
+
+#Not: zip() fonksiyonunu kullanmaya çalışın.
+
+
+
+#Problem 52
+#Enumerate, all ve any ile ilgili seyler yapilacak,reduce ile ilgili fibonacci numaralari yazdirilacak.zip function kullanilmadan isim ve soyisim
+#listelerinden 2d nested for loop ile (or for + while ) i,j print edilecek.
+
+
+
+
+#Problem 53
+#Elinizde uzunca bir string olsun.
+#
+#            "ProgramlamaÖdeviİleriSeviyeVeriYapılarıveObjeleripynb"
+#
+#
+#Bu string içindeki harflerin frekansını (bir harfin kaç defa geçtiği) bulmaya çalışın.
+#
+#İpucu : Kodlama egzersizimizde buna çok benzer bir şey yapmıştık.
+#
+
+
+
+
+#Problem 54
+#"şiir.txt" şeklinde bir dosya oluşturun ve içinde şu satırlar yer alsın.
+#
+#                    Memlekete sis çökmüş bir gece 
+#                    Usulca yanağıma sen düşüyorsun
+#                    Sabah saat dokuzu beş geçe
+#                    Terk edip bizleri gidiyorsun
+#                    Ayrılık bu kadar yakmamıştı içimizi
+#                    Farkında mısın bilmiyorum
+#                    Aldın beraberinde cumhuriyetimizi
+#                    Korkunç bir veda, sararmıştı her yer
+#                    Ellerini uzat tutmak istiyoruz
+#                    Masmavi gözleri kaybetmiş çocuk
+#                    Aldı bir sabah ruhumuzu
+#                    Lakin nasıl bölmesin yokluğun uykumuzu
+#
+#Bu dosyanın herbir satırını okuyun. Satırların baş harflerini birbirine ekleyerek bir string oluşturun ve bu string'i ekrana yazdırın.
+
+
+
+
+
+#Problem 55
+#Elinizde "mailler.txt" adında , maillerin ve bazı yazıların bulunduğu bir dosya olsun. Bu dosyanın her bir satırını okuyun ve sadece mail formatına uygun olanları ekrana yazdırın.
+#
+#                    coskun.m.murat@gmail.com
+#                    example@xyz.com
+#                    mustafa.com
+#                    mustafa@gmail
+#                    kerim@yahoo.com
+#
+#                           //
+#                           //
+#                           //
+#
+#
+#İpucu: Stringlerde bulunan endswith ve find metodlarını kullanabilirsiniz.
+
+
+
+
+
+
+#Problem 56
+#Elinizde 2 tane liste bulunsun. Bu listelerden isim ve soyisimleri birleştirerek , ekrana isim ve soyisimleri isimlere göre sıralı bir şekilde yazdırmaya çalışın.
+#
+#        isim -----> ["Kerim","Tarık","Ezgi","Kemal","İlkay","Şükran","Merve"]
+#
+#        soyisim ------> ["Yılmaz","Öztürk","Dağdeviren","Atatürk","Dikmen","Kaya","Polat"]
+
+
+
+
+
+######------------ S Q L I T E 3 ---------------#######
+; Proje 1
+; Kodlama egzersizimizde yazdığımız kütüphane projesini elinizden geldiğince geliştirmeye çalışın.
+
+; Proje 2
+; Siz de bir tane Şarkı projesi geliştirmeye çalışın.
+
+;                      Örnek özellikler;
+
+;                      1. Şarkı İsmi 
+;                      2. Sanatçı
+;                      3. Albüm
+;                      4. Prodüksiyon Şirketi
+;                      5. Şarkı Süresi
+
+;                      Örnek Metodlar;
+
+;                      1. Veritabanındaki Toplam Şarkı Süresini Hesaplayan Metod
+;                      2. Şarkı Ekle
+;                      3. Şarkı Sil
+; Proje 3
+; Süpermarket içindeki ürünler üzerinden bir tane Süpermarket Projesi geliştirmeye çalışın.
+
+
+
+#Problem 57
+# 1'den 1000'e kadar olan asal sayıları ekrana yazdıran bir program yazın. Daha sonra bir tane decorator fonksiyon kullanarak bu fonksiyona 1'den 1000'e kadar olan mükemmel sayıları yazdırma özelliği ekleyin.
+
+
+
+#Problem 58
+Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case, also often referred to as Pascal case).
+
+Examples
+"the-stealth-warrior" gets converted to "theStealthWarrior"
+"The_Stealth_Warrior" gets converted to "TheStealthWarrior"
+
+test.describe("Testing function to_camel_case")
+test.it("Basic tests")
+test.assert_equals(to_camel_case(''), '', "An empty string was provided but not returned")
+test.assert_equals(to_camel_case("the_stealth_warrior"), "theStealthWarrior", "to_camel_case('the_stealth_warrior') did not return correct value")
+test.assert_equals(to_camel_case("The-Stealth-Warrior"), "TheStealthWarrior", "to_camel_case('The-Stealth-Warrior') did not return correct value")
+test.assert_equals(to_camel_case("A-B-C"), "ABC", "to_camel_case('A-B-C') did not return correct value")
+
+
+
+#Problem 59
+The Western Suburbs Croquet Club has two categories of membership, Senior and Open. They would like your help with an application form that will tell prospective members which category they will be placed.
+
+To be a senior, a member must be at least 55 years old and have a handicap greater than 7. In this croquet club, handicaps range from -2 to +26; the better the player the lower the handicap.
+
+Input
+Input will consist of a list of pairs. Each pair contains information for a single potential member. Information consists of an integer for the person's age and an integer for the person's handicap.
+
+Output
+Output will consist of a list of string values (in Haskell and C: Open or Senior) stating whether the respective member is to be placed in the senior or open category.
+Example
+input =  [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
+output = ["Open", "Open", "Senior", "Open", "Open", "Senior"]
+test = open_or_senior([(45, 12),(55,21),(19, -2),(104, 20)])
+test2 = open_or_senior([(16, 23),(73,1),(56, 20),(1, -1)])
+
+
+##################### ITERATORS AND GENERATORS #########################################
+# Programlama Ödevi - Iteratorlar ve Generatorlar
+# Program 1
+ "Kareler" isminde bir tane sınıf tanımlayın ve bu sınıfı iterable bir sınıf yapmaya çalışın. Bu sınıfın init fonksiyonu maksimum isimli bir tane parametre alsın ve her next işleminde ekrana üzerinde bulunduğunuz sayının karesi yazdırılsın. StopIteration hatası ekrana maksimum sayıyı geçtiğiniz zaman fırlatılsın.
+
+ Örnek olarak;
+
+ kareler = Kareler(5)
+ iteration = iter(kareler)
+ next(iteration)
+ 1
+ next(iteration)
+ 4
+ next(iteration)
+ 9
+ next(iteration)
+ 16
+ next(iteration)
+ 25
+ next(iteration)
+ ---------------------------------------------------------------------------
+ StopIteration                             Traceback (most recent call last)
+ <ipython-input-24-94812372e992> in <module>()
+ ----> 1 next(iteration)
+
+ <ipython-input-1-105b1e41e5e3> in __next__(self)
+      20 
+      21             self.sayı = 1
+ ---> 22             raise StopIteration
+      23 
+      24 
+
+ StopIteration: 
+
+
+# Program 2
+ 1'den 1000'e kadar olan sayılardan asal sayıları üreten generator bir fonksiyon yazın.
+ 
+ 
+ 
+ ############################# ILERI SEVIYE MODULLER ######################################
+ # Programlama Ödevi - İleri Seviye Modüller
+# Proje 1
+# Bilgisayarınızdaki tüm mp4,txt ve pdf dosyalarını os modülüyle arayın ve bunların nerede bulunduklarını ve isimlerini ayrı ayrı "pdf_dosyalari.txt","mp4_dosyaları.txt","txt_dosyaları.txt" adlı dosyalara kaydedin.
+
+# Proje 2
+# Elinizde 5 kişinin maillerinin ve isimlerinin bulunduğu bir dosya olsun. Bu dosyayı okuyarak, her bir kişiye isimleriyle beraber mail göndermeye çalışın. Dosya formatı şu şekilde olacak.
+
+#                        Mustafa Murat Coşkun,coskun.m.murat@gmail.com
+#                                        //
+#                                        //
+#                                        //
+#                                        //
+# Proje 3
+# https://www.doviz.com/ sitesinden anlık olarak doların,euronun,altının ve borsanın değerlerini öğrenin ve bunları kullanarak bir proje geliştirmeye çalışın.
+
+# Not: Bu projeyi, requests ve beautifulsoup kullanarak geliştirin.
+
+
+
+
+#Problem 60
+ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits.
+
+If the function is passed a valid PIN string, return true, else return false.
+
+Examples (Input --> Output)
+"1234"   -->  true
+"12345"  -->  false
+"a234"   -->  false
+
+validate_pin("1rong output for '1'")
+validate_pin("12")
+validate_pin("123")
+validate_pin("12345")
+validate_pin("1234567")
+validate_pin("-1234")
+validate_pin("-12345")
+validate_pin("1.234")
+validate_pin("00000000")
+validate_pin("0000")
+
+
+
+#Problem 61
+Write function bmi that calculates body mass index (bmi = weight / height2).
+
+if bmi <= 18.5 return "Underweight"
+
+if bmi <= 25.0 return "Normal"
+
+if bmi <= 30.0 return "Overweight"
+
+if bmi > 30 return "Obese"
+
+
+#Problem 62
+In a factory a printer prints labels for boxes. For one kind of boxes the printer has to use colors which, for the sake of simplicity, are named with letters from a to m.
+
+The colors used by the printer are recorded in a control string. For example a "good" control string would be aaabbbbhaijjjm meaning that the printer used three times color a, four times color b, one time color h then one time color a...
+
+Sometimes there are problems: lack of colors, technical malfunction and a "bad" control string is produced e.g. aaaxbbbbyyhwawiwjjjwwm with letters not from a to m.
+
+You have to write a function printer_error which given a string will return the error rate of the printer as a string representing a rational whose numerator is the number of errors and the denominator the length of the control string. Don't reduce this fraction to a simpler expression.
+
+The string has a length greater or equal to one and contains only letters from ato z.
+
+Examples:
+s="aaabbbbhaijjjm"
+printer_error(s) => "0/14"
+
+s="aaaxbbbbyyhwawiwjjjwwm"
+printer_error(s) => "8/22"
+
+
+#Problem 63
+files = {
+'Input.txt': 'Randy',
+'Code.py': 'Stan',
+'Output.txt': 'Randy'
+}
+
+## Output should be like this
+{'Stan': ['Code.py'], 'Randy': ['Output.txt', 'Input.txt']} # Ouput
+
+
+#Problem 64
+Bir listeyi düzleştiren (flatten) fonksiyon yazın. Elemanları birden çok katmanlı listelerden ([[3],2] gibi) oluşabileceği gibi, non-scalar verilerden de oluşabilir. Örnek olarak:
+
+input: [[1,'a',['cat'],2],[[[3]],'dog'],4,5]
+
+output: [1,'a','cat',2,3,'dog',4,5]
+
+
+#Problem 65
+Verilen listenin içindeki elemanları tersine döndüren bir fonksiyon yazın. Eğer listenin içindeki elemanlar da liste içeriyorsa onların elemanlarını da tersine döndürün. Örnek olarak:
+
+input: [[1, 2], [3, 4], [5, 6, 7]]
+
+output: [[[7, 6, 5], [4, 3], [2, 1]]
+
+
+#Problem 66
+liste1 = [[1, 2, 3],
+[4, 5, 6],
+[7, 8, 9],
+[10, 11, 12],
+[13, 14, 15],
+[16, 17, 18],
+[19, 20, 21],
+[22, 23, 24],
+[25, 26, 27],
+[28, 29, 30],
+[31, 32, 33]]
+
+liste2 = [1, 27, 88, 98, 50, 9, 28, 45, 54, 66, 61, 23, 10, 33,
+22, 12, 6, 99, 63, 26, 87, 25, 77, 5, 16, 93, 99, 44,
+59, 69, 34, 10, 60, 92, 61, 44, 5, 3, 23, 99, 79, 51,
+89, 63, 53, 31, 76, 41, 49, 10, 88, 63, 55, 43, 40, 71,
+16, 49, 78, 41, 35, 97, 33, 76, 25, 81, 15, 99, 64, 20,
+33, 6, 89, 81, 44, 53, 59, 75, 27, 15, 64, 36, 72, 78,
+34, 36, 20, 41, 41, 75, 56, 30, 86, 46, 9, 42, 21, 64,
+26, 52, 77, 65, 64, 12, 38, 1, 35, 20, 73, 71, 37, 35,
+72, 38, 100, 52, 16, 49, 79]
+
+# liste2 yi 3lu liste gruplari olacak sekilde yeniden listeleyin
+# liste1 deki 3lu grup elemanlarinin her biri eger liste2 de yer aliyorsa liste 1 in bu elemanini print edin
+
+
+#Problem 67
+10 dan geriye 1 e kadar tum sayilari print edin ve sonra 2 serli olarak print edin
+
+#Problem 68
+Globalde tanimli tum fonksiyonlari ve variable lari silin

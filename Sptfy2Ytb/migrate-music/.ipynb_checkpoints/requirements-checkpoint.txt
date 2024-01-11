@@ -1,0 +1,13 @@
+#Core Tools
+pip
+requests
+tqdm
+
+#JupyterLab
+jupyterlab
+jupyterlab_code_formatter
+jupyterlab_sublime
+ipywidgets
+black
+isort
+nbdime

@@ -1,0 +1,5 @@
+name,price,quantity,broken_phones
+'Iphone',1000,50,3
+'Huawei',500,10,4
+'Samsung',300,20,5
+'Oppo',100,15,5
