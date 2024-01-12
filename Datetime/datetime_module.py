@@ -50,6 +50,7 @@ print(dt_now) # 2024-01-11 19:11:31.305444
 print(dt_utcnow) # 2024-01-11 16:11:31.305495
 # Here I installed pytz which is recommended even in Python's datetime
 # documentation on their official site.(Timezone module). Imported pytz
+# GMT(Greenwich Mean Time) changed to UTC(Coordinated Universal Time)! 
 
 dt1 = datetime.datetime(2024,1,11, 12,30,45, tzinfo=pytz.UTC)
 print(dt1) # 2024-01-11 12:30:45+00:00 (+00:00 UTC Offset)
