@@ -136,6 +136,7 @@ formatting characters as a second argument.
 %Y - all digits of the year
 %x - full date info e.g. '05/02/23'
 %X - full time info e.g. '11:50:15'
+%z - if the object UTC aware, it returns the UTC part as str->e.g +0200'
 AM Ante Meridiem - Before Midday (12:00night - 11:59noon)
 PM Post Meridiem - After Midday (12:00noon - 11:50night)
 '''
@@ -266,3 +267,31 @@ bugun = datetime.datetime.today()
 fark = datetime.timedelta(days=200)
 gecmis = bugun - fark # datetime.datetime object
 print(gecmis.strftime('%c')) # Mon Jun 26 18:40:19 2023
+
+
+
+############ TEST > TO FIND THE DIFFERENCE OF TWO TIMEZONES ############
+from datetime import datetime
+from time import strftime
+import pytz
+import re
+
+for tz in pytz.all_timezones:
+    print(tz)
+
+canada_tzones = [tz for tz in pytz.all_timezones if re.search(r'canada', tz, re.IGNORECASE)]
+print(canada_tzones)
+
+dt_ist = datetime.now(pytz.timezone('Europe/Istanbul'))
+dt_can = datetime.now(pytz.timezone('Canada/Eastern'))
+print(dt_ist, dt_can)
+
+diff_ist = int(dt_ist.strftime('%z'))
+diff_can = int(dt_can.strftime('%z'))
+
+print(f'Istanbul ve Montreal arasindaki saat farki: {abs(int((diff_can - diff_ist)/100))}')
+
+if diff_ist > diff_can:
+    print(f'Istanbul Montreal\'den {int((diff_ist-diff_can)/100)} saat ileride')
+
+print(f'Montreal Istanbul\'dan {abs(int((diff_can-diff_ist)/100))} saat geride')
