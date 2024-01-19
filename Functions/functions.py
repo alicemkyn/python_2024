@@ -213,7 +213,7 @@ for i in range(3):
 # Above they are all statements
 
 # To recognize and differentiate those we can use eval and exec.
-# eval() works with the given parameter it means that parameter is expression
+# eval() if works with the given parameter it means that parameter is expression
 # exec() this function takes statements as a parameter.
 
 # filter() Takes two parameters and works if True.
