@@ -81,7 +81,10 @@ lg(os.urandom(12)) # b'\xa1\x97Nh_\x17\xd7\xbe\xff\xc2\xebP'
 # Creates random byte string(12 byte) #It can be used in cryptographic works or creating passwords
 
 # 19
-#os.walk('path') # It gives everything in the given path, returns tuple with 3 items. ('main_path', [folder list], [file list in path])
+#os.walk('path') # It gives everything in the given path, returns tuple with 3 items. ('main_path', [folder list], [file list in path]). Works recursively
+for i in os.walk('/Users/alicemkoyun/Programming'):
+    lg(i)
+
 # If we need the file list only:
 for path, folders, files in (os.walk('/Users/alicemkoyun/Programming')):
     lg(files)

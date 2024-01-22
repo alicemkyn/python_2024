@@ -50,3 +50,11 @@ lg(dt) # time.struct_time(tm_year=2029, tm_mon=7, tm_mday=31, tm_hour=0, tm_min=
 
 # 7- sleep() # Takes arg in seconds type
 time.sleep(0.001)
+
+#8 - perf_conter()
+'''
+Same like time() but time() calc since epoch in seconds
+perf_conter() calcs from starting the OS(opening laptop) in seconds
+'''
+lg(time.time()) # 1705929639.033421 seconds
+lg(time.perf_counter()) # 12096.529299375 seconds

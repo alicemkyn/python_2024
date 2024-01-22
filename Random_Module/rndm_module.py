@@ -1,5 +1,12 @@
 import random
-
+'''
+random is actually not random. It has a deterministic approach,
+so taken a value from hour or microsecond of OS than makes modular arithmetics to create random digits.
+To see more try random.seed(10) and every random int results 
+will be the same.
+Before python 3.2 people would use random.seed = os.urandom(1024) to make it more reliable, unpredictable, and secure.
+urandom is a OS file and random byte value is determined by system itself.
+'''
 # 1- random() # Gives random float between 0 and 1
 print(random.random()) # 0.583588501991895
 
@@ -30,3 +37,9 @@ print(random.randrange(10,13)) #10 #13
 l = ['ali', 44,'cem', 'koyun', 4, 'ankara', 'vancouver', True, None]
 # Lets say that we want to collect 4 random samples from this list.
 print(random.sample(l, 4)) # ['vancouver', True, 'cem', 4]
+
+# 8 random.seed() # Determine the seed manually to get same results everytime.
+random.seed(10)
+print(random.random()) # 0.5714025946899135
+random.seed(10)
+print(random.random()) # 0.5714025946899135
