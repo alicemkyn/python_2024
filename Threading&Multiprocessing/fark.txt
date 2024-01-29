@@ -1,0 +1,68 @@
+Multithreading ve Multiprocessing nedir? Farkları nelerdir?
+Herkese merhabalar, bu yazıda sizlerle büyük çaplı yazılım projelerinde çok sık kullanılan iki yapıdan ve bunların farklarından bahsedeceğim. Bunlar Multithreading ve multiprocessing.
+Hadi başlayalım.
+İlk olarak bu terimlere bi göz atalım
+
+Multithreading nedir ?
+Programın çalışması tek bir process üzerinden sağlanırken, bu process üzerinde birden fazla işlem parçacığı çalışmaktadır. Process üzerinde çalışan bu çoklu işlem parçacıkları, asenkron olarak farklı görevleri yerine getirmek için kullanılırlar. Bu sayede birbirlerini beklemesi gerekmeyen işlemlerin, tek bir process üzerinde asenkron olarak gerçekleştirilmeleri sağlanır ve performans arttırılmış olur.
+
+Multiprocessing nedir?
+Multiprocessing ise çoklu process anlamına gelmektedir. Programın çalışması için birden fazla işlem çalışmaktadır. Bu işlemler farklı kaynakları kullanmaktadır. Farklı işlemlerin kullanımından kaynaklı programın işlem gücü artmaktadır. Farklı kaynakların kullanılmasıyla programın performansı arttırılmış olur.
+
+Peki temel farklılıklar nelerdir?
+Multiprocess ile birden fazla işlem çalışırken; Multithread ile birden fazla işlem parçacığı çalışmakadır.
+Multiprocess yaparken işlemin oluşturulması zaman alır ve programın başlaması yavaşlar, fakat multithreading ile işlem parçacığı oluşturulması daha hızlıdır ve program daha hızlı başlar.
+Multiprocess ile işlemler arası haberleşme konusunda farklı kaynaklar kullanıldığından IPC kullanılmaktadır. Multithreading ise aynı sistem kaynağını kullandığı için işlem parçacıkları arası haberleşme daha kolaydır.
+Multiprocess ile birden fazla process ile işlem kapasitesi arttırılırken, multithread ile aynı process üzerinde birden fazla thread oluşturularak işlem gücü arttırılmaya çalışılır.
+Multiprocess ile processler kendileri çalışmalarını belirlerken, multithread ile işlem parçacıkları ana process üzerinden paralel olarak çalışmaktadır.
+Processler, threadlara göre daha fazla kaynak kullanabildiği için işlemleri threadlara göre daha hızlı gerçekleştirebilmektedir.
+
+
+O zaman multiprocess tasarımını detaylıca inceleyelim...
+
+Processler kendi bellek yönetimlerini kendileri yaparlar. Multiprocessing ile işlemler ihtiyaçları olan bellekleri direk olarak çekerler.
+Birbirlerini beklemesi gerekmeyen işlemlerin daha performanslı gerçekleşmelerini sağlayarak programın verimliliğini arttırır.
+Uygulamaların güvenirliliği arttırılmış olur. Bir processte meydana gelen bir hata bütün projenin çalışmasını engeller.
+
+Multithreading özellikleri
+
+Bütün işlem parçacıkları aynı kaynak üzerinde birbirlerine paralel olarak çalışmaktadır.
+İşlem parçacıkları işlemlerin kendisi kadar kaynak kullanmadığı için daha az kaynak ile aynı işlemi gerçekleştirebilir.
+Threadlar aynı process üzerinde çalıştığı için kendi aralarında haberleşmeleri çok daha kolaydır.
+
+
+Multithreading ve Multiprocess karşılaştırması yapacak olursak:
+
+MultiProcessing ile birden fazla process oluşturularak işlem kapasitesi arttırılır.	MultiThreading ile tek bir process üzerinde birden fazla thread oluşturularak işlem kapasitesi arttırılır
+MultiProcessing yapısında birden fazla process çalışır.	MultiThreading ile tek bir process üzerinde birden fazla işlem parçacığı oluşturulur.
+MultiProcessing yapısında birden fazla process oluşturulduğu için BAŞLATILMASI yavaştır ve daha fazla kaynak tüketir.	MultiThreading yapısında tek process oluşturulduğu için daha az kaynak tüketir.
+MultiProcessing yapısında herbir process için ayrı ayrı bellek ve CPU zamanı ayrılır.	MultiThreading yapısında ise bir adet process için bu işlem yapılır ve bütün işlem parçacıkları aynı kaynak üzerinde çalışırlar.
+MultiProcessing ile işlem süresi ciddi olarak kısalır.	MultiThreading ile belli bir miktarda hız kazanılır.
+MultiProcessing yapısında CPU tarafından bütün processlerin aynı anda çalışması sağlanır.	MultiThreading yapısı ile bütün işlem parçacıklarının aynı anda çalışmaları sağlanır.
+
+
+Multiprocess yapısının avantajları ve dezavantajları
+
+Daha fazla process olduğu için daha fazla işlem kapasitesi anlamına gelmektedir.
+Aynı işin daha kısa zamanda yapılabilmesine olanak tanınır.
+Çoklu CPU da daha etkili CPU kullanımı sağlanır
+Alt processlerin bağımsız çalışmasından dolayı hızlı bir şekilde sonlandırılması daha kolaydır.
+Aynı belleğin kullanılmaması sağlandığı için senkronizasyon gerekmez.
+Çok büyük verinin işlenmesi gerekli olduğunda multi process daha fazla kaynağı daha etkili kullanabildiği için daha faydalı olabilmektedir.
+Processler arası haberleşme zordur. Bellek patlaşımı yapmadıkları için işlemler arası haberleşme için IPC(Inter process communication) gerekmektedir.
+Threadlara göre çok fazla bellek kullanılmaktadır
+İşlemlerin derlenmesi ve başlatılması çok daha fazla maliyetlidir.
+
+
+Multithreading yapısının avantajları ve dezavantajları
+
+İşlem parçacıkları aynı adresi kullanırlar.
+İşlem parçacıklarının çalışması processlere göre daha az kaynak tüketir.
+Threadlar arası haberleşme daha kolaydır.
+Threadlar arası bellek paylaşımı daha kolaydır.
+Threadlar ile uygulama arayüzü daha dinamik hale getirilir.
+Threadların başlatılması ve oluşturulması daha hızlıdır.
+Threadlarn görevlerini tamamladıktan sonra başka bir göreve başlaması daha kolaydır.
+Multithreading yapısında threadlar genellikle durdurulamaz ama duraklatılabilir.
+Thread kullanımı kod karmaşıklığını arttırabilmektedir ve dikkatli olunmazsa bug olasılığı yükselir.
+Threadlar için bir işlem kuyruğu belirlenmelidir. İşlem kuyruğunun boş olduğu durumlarda sistemi yormadan çalışmaya devam edebilmelidir.

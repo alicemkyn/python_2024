@@ -1,0 +1,28 @@
+Threading vs Multiprocessing
+
+Threading:
+- A new thread is spawned within the existing process
+- Starting a thread is faster than starting a process
+- Memory is shared between all threads
+- Mutexes often necessary to control access to shared data
+- One GIL (Global Interpreter Lock) for all threads
+
+Multiprocessing:
+- A new process is started independent from the first process
+- Starting a process is slower than starting a thread
+- Memory is not shared between processes
+- Mutexes not necessary (unless threading in the new process)
+- One GIL (Global Interpreter Lock) for each process
+
+Mutex
+"Mutex" is short for "mutual exclusion," and it is a synchronization mechanism used in programming. A mutex ensures data integrity by preventing multiple processes from accessing a specific resource (data, memory region, file, etc.) simultaneously.
+
+The fundamental functions of a mutex include:
+
+Lock: When a process requests access to a particular resource, the mutex locks that resource. This ensures that only the requesting process can access the specific resource, and other processes are prevented from interfering.
+
+Unlock: When a process completes using a shared resource, it unlocks the mutex, releasing the lock. This allows other processes to access the resource.
+
+Mutexes are used, particularly in multi-process or multi-threaded environments, to facilitate the secure sharing of resources. For example, if there is a data structure used by multiple threads simultaneously, a mutex can be employed to ensure safe access to that data structure.
+
+Mutexes provide flexible control for programmers; however, improper use can lead to issues such as deadlocks or race conditions. Therefore, careful management of mutexes and other synchronization mechanisms is crucial.

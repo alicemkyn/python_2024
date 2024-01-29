@@ -81,7 +81,7 @@ def do_something():
 t1 = threading.Thread(target=do_something)
 t2 = threading.Thread(target=do_something)
 
-t1.start() # Starts simultanously with t2
+t1.start() # Starts simultaneously with t2
 t2.start()
 
 t1.join() # Wait for the complete t1 and t2 finish their job before executing next line(finish)

@@ -25,10 +25,11 @@ https://httpbin.org/stream/:n Streams n–100 lines.
 https://httpbin.org/delay/:n Delays responding for n–10 seconds.
 
 '''
-
+import concurrent.futures
 import threading
 import requests
 import logging
+import time
 
 logging.basicConfig(level=logging.DEBUG, format='%(message)s')
 
@@ -41,18 +42,26 @@ data = {
     'city':'Ankara',
     'country':'Turkey'
 }
+counter = 0
 
 def do_request():
+    start = time.perf_counter()
     while True:
         response = requests.post(url, data=data).text
 
         logging.debug(response)
+        global counter
+        counter += 1
+        # logging.debug(counter)
+        if round(time.perf_counter() - start) >= 10:
+            logging.debug(counter)
+            break
 
 threads = []
 
 for i in range(50):
     t = threading.Thread(target=do_request)
-    t.deaemon = True
+    t.daemon = True
     threads.append(t)
 
 for i in range(50):
@@ -60,3 +69,7 @@ for i in range(50):
 
 for i in range(50):
     threads[i].join()
+    
+# with concurrent.futures.ThreadPoolExecutor() as executor:
+#     for _ in range(50):
+#         executor.submit(do_request)
