@@ -100,7 +100,7 @@ output:
 
 '''
 
-# 20
+# 20 os.environ() dict-like object
 lg(os.environ) # returns the dict of environment variables in Operating System
 
 for k,v in os.environ.items():
@@ -109,7 +109,15 @@ for k,v in os.environ.items():
 lg(os.environ['HOME']) # /Users/alicemkoyun
 lg(os.environ['USER']) # alicemkoyun
 
-# 21
+
+# 21 os.getenv() focuses only retrieving the value
+lg(os.getenv('HOME'))
+lg(os.getenv('FAKE', 'Not Found')) # 2.argument is if not found
+
+# 22 to get username of OS
+lg(os.getlogin()) # alicemkoyun
+
+
 # os.path #This is an attibute and it contains other attrs and methods
 
 # os.path.abspath() # returns the path of a file
@@ -139,4 +147,3 @@ lg(os.path.split('/Users/alicemkoyun/Programming')) # ('/Users/alicemkoyun', 'Pr
 
 # os.path.splitext() # It uses for seperating the file name and its extension from each other.
 lg(os.path.splitext('word_file.txt')) # ('word_file', '.txt')
-
