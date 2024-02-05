@@ -148,3 +148,26 @@ print(os.cpu_count(), psutil.cpu_percent())
 # To usage of dir and see the methods of datatypes or builtin functions
 assertion = 'sort' in dir(list) and 'sorted' in dir(__builtins__)
 print(assertion) # True
+
+# To see the repetitive element in list using collections Counter class
+from collections import Counter
+ls = ['Karrablast', 'Wynaut', 'Vigoroth', 'Farfetchd', 'Sobble', 'Scyther', 'Rhydon', 'Golbat', 'Poliwhirl', 'Pikipek', 'Exeggcute', 'Magnemite', 'Throh', 'Mr-mime', 'Kadabra', 'Finneon', 'Kubfu', 'Watchog', 'Doublade', 'Florges', 'Mr-rime', 'Fennekin', 'Eiscue-ice', 'Jynx', 'Arcanine', 'Dubwool', 'Feraligatr', 'Darumaka', 'Cherubi', 'Milcery', 'Bronzong', 'Mudsdale', 'Silcoon', 'Eldegoss', 'Yamask', 'Froslass', 'Salamence', 'Xerneas', 'Omanyte', 'Seel', 'Koffing', 'Chespin', 'Terrakion', 'Regirock', 'Grimmsnarl', 'Snivy', 'Eternatus', 'Miltank', 'Zacian', 'Flaaffy', 'Darmanitan-standard', 'Sirfetchd', 'Dragalge', 'Heracross', 'Timburr', 'Grubbin', 'Crobat', 'Throh', 'Kommo-o', 'Snorlax', 'Arrokuda', 'Eternatus', 'Minun', 'Shroomish', 'Grotle', 'Mothim', 'Binacle', 'Tapu-koko', 'Crustle', 'Wormadam-plant', 'Drapion', 'Chandelure', 'Pyroar', 'Pyukumuku', 'Azelf', 'Corsola', 'Skwovet', 'Barboach', 'Clamperl', 'Silcoon', 'Gourgeist-average', 'Pignite', 'Gothorita', 'Goldeen', 'Cinderace', 'Grubbin', 'Koffing', 'Slugma', 'Incineroar', 'Cacturne', 'Axew', 'Paras', 'Gothita', 'Deino', 'Minun', 'Slowpoke', 'Samurott', 'Ditto', 'Solosis', 'Pansage']
+
+
+l_before = len(ls)
+counter = Counter(ls)
+dups = [item for item, count in counter.items() if count > 1]
+for i in dups:
+    ls.remove(i)
+ls.sort()
+
+print(f'List had {l_before} elements.\nAfter removing the dups {len(ls)} elements inside. We removed {l_before - len(ls)} elements')
+
+
+
+# isclose method to compare floats from math module
+print(0.1 + 0.1 == 0.2) # True 
+print(0.1 + 0.2 == 0.3) # False
+
+import math
+print(math.isclose(0.1 + 0.2, 0.3)) # True
