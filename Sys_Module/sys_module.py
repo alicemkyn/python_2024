@@ -88,3 +88,6 @@ print('Error Message', 1/0)
 
 
 # sys.stdin > same as input()
+
+# sys.getrecursionlimit()
+print(sys.getrecursionlimit()) # 1000
