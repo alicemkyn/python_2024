@@ -98,3 +98,31 @@ for state in data['states']:
 with open('new_states.json', 'w') as f:
     json.dump(data, f, indent=2, sort_keys=True)
 
+
+
+# seperators
+json.dumps({"Elma":42,"Armut":25,"kiraz":65},separators=("?","!"))
+'{"Elma"!42?"Armut"!25?"kiraz"!65}'
+
+
+# object_hook
+json.loads('{"mezuniyet": "üniversite", "Bölüm": "Tıp"}',object_hook=list)
+['mezuniyet', 'Bölüm']
+
+
+# object_pairs_hook
+json.loads('{"Ad": "Fırat", "Soyad": "Özgül"}',object_pairs_hook=str)
+"[('Ad', 'Fırat'), ('Soyad', 'Özgül')]"
+
+json.loads('["Fırat", "Özgül"]',object_pairs_hook=dict,object_hook=list)
+['Fırat', 'Özgül']
+
+
+# parse_int
+json.loads('{"Satılan": 54, "Kalan": 46}',parse_int=float)
+{'Satılan': 54.0, 'Kalan': 46.0}
+
+
+# parse_float
+json.loads('[23, 45.2, "yazbel", 512.128]',parse_int=bool,parse_float=list)
+[True, ['4', '5', '.', '2'], 'yazbel', ['5', '1', '2', '.', '1', '2', '8']]
