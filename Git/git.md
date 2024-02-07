@@ -20,7 +20,9 @@
 - ### git remote set-url origin <https://githubusername@github.com...>
 
 # Git Next Level
-- ### git commit --amend -m " Message "
+- ### git commit -am 'Message'
+*Eger dosya untracked degilde modified moddaysa add . yapmadan commit yapilabilir -am ile. Sadece modified dosyalar icin gecerlidir. Yeni olusturulan dosyalar add . ile eklenmeli sonra commit edilmelidir.*
+- ### git commit --amend -m "Message"
 *En son snapshot i alinan commiti bu commit ile birlestirir.Yani commit acmaz, log tarihcesinde gozukmez. -m kullanmadan yapilirsa commitler yine birlesir ama mesaj ayni olarak kalir.*
 - ### git revert < commitID >
 *Commit id git log dan alinabilir.Son 7 hanesini almak yeterlidir. Yazilan Id deki commite revert edilir ancak reverted olarak log timeline inda isaretlenir.*
