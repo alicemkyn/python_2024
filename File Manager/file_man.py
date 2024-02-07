@@ -64,3 +64,4 @@ with open('contact.txt', 'r+') as file:
 # Changes at bottomline
 with open('contact.txt', 'a') as file:
     file.write('Vlad:77443\n')
+    file.write('Tanya:99441\n')
