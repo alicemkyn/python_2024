@@ -268,6 +268,14 @@ print(vars(list))
 print(vars(dict))
 
 
+#getattr(), hasattr(), callable()
+import string
+attr = getattr(string, 'octdigits')
+print(attr) # 01234567
+print(hasattr(string, 'octdigits')) # True
+print(callable(string.ascii_letters)) # False
+
+
 ####################### Lambda Functions
 func = lambda a,b : a + b
 print(func(2,2)) # 4
