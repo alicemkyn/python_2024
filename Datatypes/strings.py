@@ -1,5 +1,6 @@
 '''
 Strings are IMMUTABLE datatype.
+Indexable.
 '''
 
 ########################### STRING METHODS #############################
