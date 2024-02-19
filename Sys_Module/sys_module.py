@@ -91,3 +91,11 @@ print('Error Message', 1/0)
 
 # sys.getrecursionlimit()
 print(sys.getrecursionlimit()) # 1000
+
+
+# sys.getsizeof()
+a = 'alicem'
+print(sys.getsizeof(a)) # 55 (byte)
+
+a = [*range(1_000_000)]
+print(f'{sys.getsizeof(a) / 1e6} MB') # 8.000056 MB
