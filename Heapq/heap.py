@@ -40,7 +40,7 @@ heapq.heappush(numbers, 2)
 print(numbers) # [2, 4, 3, 5, 7, 11]
 
 
-# heappop() Pop the smallest item off the heap, and heapifies it.
+# heappop() Pop the first item off the heap, and heapifies it.
 smallest = heapq.heappop(numbers)
 print(smallest) # 2
 print(numbers) # [3, 4, 11, 5, 7]
