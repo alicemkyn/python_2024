@@ -197,3 +197,7 @@ print(__import__('keyword').kwlist)
  'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 
  'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 
  'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+
+# Walrus Operator
+print((c := (b := (a := 3) + a) + b) + c) # 24
