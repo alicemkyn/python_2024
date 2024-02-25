@@ -40,6 +40,12 @@ print(sys.executable) #/opt/homebrew/opt/python@3.10/bin/python3.10
 
 
 # sys.path
+"""
+Returns list object. This list contains directories that Python uses for
+modules and packages when attempting to import them. In other words, when
+Python tries to load a module or package, it look in the directories listed
+in 'sys.path'. For real example look at Pytest/tests/test_my_functions.py
+"""
 print(sys.path)
 [
     '/Users/alicemkoyun/Programming/Sys_Module', 
