@@ -201,3 +201,15 @@ print(__import__('keyword').kwlist)
 
 # Walrus Operator
 print((c := (b := (a := 3) + a) + b) + c) # 24
+
+# Fibonacci With Walrus Operator
+a = b = 1
+n = 10
+fibonacci = [(old := a, a := b, b := old + b) for _ in range(n)]
+print(fibonacci)
+
+
+# Using With Blocks for Multiple Files
+with open('errors.txt', 'r') as source, open('outputs.txt', 'a') as destination:
+    content = source.read()
+    destination.write('\n' + content)
