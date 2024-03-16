@@ -213,3 +213,9 @@ print(fibonacci)
 with open('errors.txt', 'r') as source, open('outputs.txt', 'a') as destination:
     content = source.read()
     destination.write('\n' + content)
+
+
+# Sort a Dictionary by Its Values
+my_dict = {'a': 5, 'b': 3, 'c': 8, 'd': 1}
+sorted_dict = {k : v for k, v in sorted(my_dict.items(), key=lambda item: item[1])}
+print(sorted_dict)

@@ -2,7 +2,7 @@
 - Mutable
 - Unordered
 - Unindexable
-- Can contain duplicate of values NOT KEYS
+- Can contain duplicate of values NOT KEYS keys are unique in dc
 - dict = {'key' : 'value'}
 - dict[key] -> Returns the value
 - dict[key] = value -> Assigns the value
