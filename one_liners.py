@@ -219,3 +219,27 @@ with open('errors.txt', 'r') as source, open('outputs.txt', 'a') as destination:
 my_dict = {'a': 5, 'b': 3, 'c': 8, 'd': 1}
 sorted_dict = {k : v for k, v in sorted(my_dict.items(), key=lambda item: item[1])}
 print(sorted_dict)
+
+
+
+# Find a file path (Check indently.io 5 really cool python functions)
+from tkinter import filedialog as fd
+path = fd.askopenfilename(title='Select a file')
+
+
+
+# / * as a parameter
+def fonksiyon(param1, param2, /, param3, *, param4):
+    print(f"param1: {param1}, param2: {param2}, param3: {param3}, param4: {param4}")
+
+# Bu çağrı geçerli
+fonksiyon(1, 2, param3=3, param4=4)
+
+# Bu çağrı da geçerli
+fonksiyon(1, 2, 3, param4=4)
+
+# Bu çağrı geçersiz, hata verecek
+# fonksiyon(param1=1, param2=2, param3=3, param4=4)  # TypeError: fonksiyon() got some positional-only arguments passed as keyword arguments: 'param1, param2'
+
+# Bu çağrı geçersiz, hata verecek
+# fonksiyon(1, 2, param3=3, 4)  # TypeError: fonksiyon() takes 3 positional arguments but 4 were given
